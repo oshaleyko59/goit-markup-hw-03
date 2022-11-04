@@ -6,9 +6,9 @@
   --color-black: #000000;
   --color-footer-link: rgba(255, 255, 255, 0.6);
   --color-background: #f5f5f5;
-  --color-background-secondary: #F5F4FA;  /*btns */
-  --color-background-black:  #2F303A;
-  --color-border: #EEEEEE;
+  --color-background-secondary: #f5f4fa; /*btns */
+  --color-background-black: #2f303a;
+  --color-border: #eeeeee;
 }
 
 body {
@@ -20,28 +20,40 @@ body {
   letter-spacing: 0.03em;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+img {
+  display:inline-block;
+}
+
+button {
+  cursor: pointer;
+   display: block;
+  margin: 0 auto;
+}
+
 /* ============================== AUXILARY ===================================== */
 
-.hide {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+.visually-hidden {
   position: absolute;
   width: 1px;
-  word-wrap: normal !important;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.nodecor {
+a {
   text-decoration: none;
-}
-
-.nostyle {
-  list-style: none;
 }
 
 .on-white {
@@ -52,9 +64,19 @@ body {
   color: var(--color-white);
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 /* ============================== HEADER ============================== */
 
 .page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   background-color: var(--color-white);
 }
 
@@ -79,7 +101,8 @@ body {
   line-height: 1.14;
 }
 
-.contact-list {}
+.contact-list {
+}
 
 .contact-list-link {
   font-weight: 500;
@@ -88,11 +111,15 @@ body {
 }
 
 .nav-list-link:hover,
-.nav-list-link:focus,
-.nav-list-link.current {
+.nav-list-link:focus
+ .nav-list-link.current
+{
   color: var(--color-accent);
 }
 
+/* .nav-list-link:active { ????
+  color: #ffffff;
+} */
 .contact-list-link:hover,
 .contact-list-link:focus {
   color: var(--color-accent);
@@ -101,6 +128,8 @@ body {
 /* ============================== FOOTER ============================== */
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--color-background-black);
 }
 
@@ -121,12 +150,13 @@ body {
 }
 /* ============================== HERO ============================== */
 
-
 .hero {
-  background-color:var(--color-background-black);
+  background-color: var(--color-background-black);
+padding-top: 200px;
+padding-bottom: 200px;
 }
 
-.hero-hdr{
+.hero-hdr {
   color: var(--color-white);
   font-size: 44px;
   font-weight: 900;
@@ -148,16 +178,20 @@ body {
   font-weight: 700;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  cursor: pointer;
 }
 
 /* ============================== PROFILE ============================== */
 
-.profile {}
+.profile {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-.profile-list {}
+.profile-list {
+}
 
-.profile-item {}
+.profile-item {
+}
 
 .profile-title {
   color: var(--color-secondary);
@@ -169,15 +203,20 @@ body {
 
 /* ============================== COMPETENCE & TEAM ============================== */
 
-.competence {}
+.competence {
+  padding-bottom: 94px;
+}
 
 .team {
-background-color: var(--color-background-secondary);
+  background-color: var(--color-background-secondary);
+  padding-top: 94px;
+  padding-bottom: 94px;
+
 }
 
 .competence-list,
-.team-list
- {}
+.team-list {
+}
 
 .competence-hdr,
 .team-hdr {
@@ -185,6 +224,7 @@ background-color: var(--color-background-secondary);
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .team-card {
@@ -201,12 +241,16 @@ background-color: var(--color-background-secondary);
 .team-card-description {
 }
 
-
 /* ============================== PORTFOLIO PAGE ============================== */
 
-.projects {}
+.projects {
+   padding-top: 94px;
+     padding-bottom: 94px;
+}
 
-.filters {}
+.filters {
+  margin-bottom: 34px;
+}
 
 .filter-btn {
   color: var(--color-secondary);
@@ -215,7 +259,9 @@ background-color: var(--color-background-secondary);
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: inherit;
-  cursor: pointer;
+  padding: 6px 22px;
+border-radius: 4px;
+border-style:none;
 }
 
 .filter-btn:hover,
@@ -223,7 +269,9 @@ background-color: var(--color-background-secondary);
   color: var(--color-white);
 }
 
-.project-list {}
+.project-list {
+
+}
 
 .project-title {
   color: var(--color-secondary);
