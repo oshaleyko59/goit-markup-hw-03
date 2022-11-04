@@ -1,0 +1,240 @@
+:root {
+  --color-primary: #757575;
+  --color-secondary: #212121;
+  --color-accent: #2196f3;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-footer-link: rgba(255, 255, 255, 0.6);
+  --color-background: #f5f5f5;
+  --color-background-secondary: #F5F4FA;  /*btns */
+  --color-background-black:  #2F303A;
+  --color-border: #EEEEEE;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+/* ============================== AUXILARY ===================================== */
+
+.hide {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.nodecor {
+  text-decoration: none;
+}
+
+.nostyle {
+  list-style: none;
+}
+
+.on-white {
+  color: var(--color-black);
+}
+
+.on-black {
+  color: var(--color-white);
+}
+
+/* ============================== HEADER ============================== */
+
+.page-header {
+  background-color: var(--color-white);
+}
+
+.logo-link {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(31 / 26);
+}
+
+.logo-accent {
+  color: var(--color-accent);
+}
+
+.nav-list {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.nav-list-link {
+  color: var(--color-secondary);
+  line-height: 1.14;
+}
+
+.contact-list {}
+
+.contact-list-link {
+  font-weight: 500;
+  color: var(--color-primary);
+  line-height: 1.14;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.nav-list-link.current {
+  color: var(--color-accent);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--color-accent);
+}
+
+/* ============================== FOOTER ============================== */
+
+.page-footer {
+  background-color: var(--color-background-black);
+}
+
+.address {
+  color: var(--color-white);
+  font-style: inherit;
+}
+
+.footer-link {
+  color: var(--color-footer-link);
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.address:hover,
+.address:focus {
+  color: var(--color-accent);
+}
+/* ============================== HERO ============================== */
+
+
+.hero {
+  background-color:var(--color-background-black);
+}
+
+.hero-hdr{
+  color: var(--color-white);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-btn {
+  height: 50px;
+  width: 216px;
+  border-radius: 4px;
+
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* ============================== PROFILE ============================== */
+
+.profile {}
+
+.profile-list {}
+
+.profile-item {}
+
+.profile-title {
+  color: var(--color-secondary);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* ============================== COMPETENCE & TEAM ============================== */
+
+.competence {}
+
+.team {
+background-color: var(--color-background-secondary);
+}
+
+.competence-list,
+.team-list
+ {}
+
+.competence-hdr,
+.team-hdr {
+  color: var(--color-secondary);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.team-card {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.team-card-name {
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+.team-card-description {
+}
+
+
+/* ============================== PORTFOLIO PAGE ============================== */
+
+.projects {}
+
+.filters {}
+
+.filter-btn {
+  color: var(--color-secondary);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--color-white);
+}
+
+.project-list {}
+
+.project-title {
+  color: var(--color-secondary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  color: var(--color-primary);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
