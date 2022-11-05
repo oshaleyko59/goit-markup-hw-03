@@ -12,26 +12,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <header class="page-header">
     <a href="/" class="logo-link  on-white"><span class="logo-accent">Web</span>Studio</a>
-    <nav>
-      <ul class="nav-list ">
-        <li><a href="./index.html" class="nav-list-link  current ">Студія</a></li>
-        <li><a href="./portfolio.html" class="nav-list-link ">Портфоліо</a></li>
-        <li><a href="#" class="nav-list-link ">Контакти</a></li>
+    <div class="header-link-wrap">
+      <nav>
+        <ul class="nav-list ">
+          <li><a href="./index.html" class="nav-list-link  current ">Студія</a></li>
+          <li><a href="./portfolio.html" class="nav-list-link ">Портфоліо</a></li>
+          <li><a href="#" class="nav-list-link ">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <ul class="contact-list">
+        <li><a href="mailto:info@devstudio.com" class="contact-list-link ">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="contact-list-link ">+38 096 111 11 11</a></li>
       </ul>
-    </nav>
-    <ul class="contact-list">
-      <li><a href="mailto:info@devstudio.com" class="contact-list-link ">info@devstudio.com</a></li>
-      <li><a href="tel:+380961111111" class="contact-list-link ">+38 096 111 11 11</a></li>
-    </ul>
+    </div>
   </header>
 
   <main>
@@ -42,82 +45,83 @@
 
     <section class="profile">
       <div class="container">
-      <h2 class="visually-hidden">Особливості</h2>
-      <ul class="profile-list ">
-        <li class="profile-item">
-          <h3 class="profile-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p>
-            Ідейні міркування, і навіть початок повсякденної роботи з
-            формування позиції.
-          </p>
-        </li>
-        <li class="profile-item">
-          <h3 class="profile-title">ПУНКТУАЛЬНІСТЬ</h3>
-          <p>
-            Завдання організації, особливо рамки і місце навчання кадрів тягне
-            у себе.
-          </p>
-        </li>
-        <li class="profile-item">
-          <h3 class="profile-title">ПЛАНУВАННЯ</h3>
-          <p>
-            Так само консультація з широким активом значною мірою зумовлює.
-          </p>
-        </li>
-        <li class="profile-item">
-          <h3 class="profile-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-          <p>
-            Значимість цих проблем настільки очевидна, що реалізація планових
-            завдань.
-          </p>
-        </li>
-      </ul>
+        <h2 class="visually-hidden">Особливості</h2>
+        <ul class="profile-list ">
+          <li class="profile-item">
+            <h3 class="profile-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p>
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="profile-item">
+            <h3 class="profile-title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p>
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li class="profile-item">
+            <h3 class="profile-title">ПЛАНУВАННЯ</h3>
+            <p>
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="profile-item">
+            <h3 class="profile-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p>
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="competence">
       <div class="container">
-      <h2 class="competence-hdr">Чим ми займаємося</h2>
-      <ul class="competence-list ">
-        <li><img src="./images/act1.jpg" alt="Розробка" width="370"></li>
-        <li><img src="./images/act2.jpg" alt="Тестування" width="370"></li>
-        <li><img src="./images/act3.jpg" alt="Дизайн" width="370"></li>
-      </ul>
+        <h2 class="competence-hdr">Чим ми займаємося</h2>
+        <ul class="competence-list ">
+          <li class="competence-list-item"><img src="./images/act1.jpg" alt="Розробка" width="370"></li>
+          <li><img src="./images/act2.jpg" alt="Тестування" width="370"></li>
+          <li><img src="./images/act3.jpg" alt="Дизайн" width="370"></li>
+        </ul>
       </div>
     </section>
 
     <section class="team">
       <div class="container">
-      <h2 class="team-hdr">Наша команда</h2>
-      <ul class="team-list ">
-        <li class="team-card">
-          <img src="./images/tmember1.jpg" alt="член команди 1" width="270">
-          <p class="team-card-name">Ігор Дем'яненко</p>
-          <p lang="en" class="team-card-description">Product Designer</p>
-        </li>
-        <li class="team-card">
-          <img src="./images/tmember2.jpg" alt="член команди 2" width="270">
-          <p class="team-card-name">Ольга Рєпіна</p>
-          <p lang="en" class="team-card-description">Frontend Developer</p>
-        </li>
-        <li class="team-card">
-          <img src="./images/tmember3.jpg" alt="член команди 3" width="270">
-          <p class="team-card-name">Микола Тарасов</p>
-          <p lang="en" class="team-card-description">Marketing</p>
-        </li>
-        <li class="team-card">
-          <img src="./images/tmember4.jpg" alt="член команди 4" width="270">
-          <p class="team-card-name">Михайло Єрмаков</p>
-          <p lang="en" class="team-card-description">UI Designer</p>
-        </li>
-      </ul>
+        <h2 class="team-hdr">Наша команда</h2>
+        <ul class="team-list "> -->
+          <li class="team-card">
+            <img src="./images/tmember1.jpg" alt="член команди 1" width="270">
+            <p class="team-card-name">Ігор Дем'яненко</p>
+            <p lang="en" class="team-card-description">Product Designer</p>
+          </li>
+          <li class="team-card">
+            <img src="./images/tmember2.jpg" alt="член команди 2" width="270">
+            <p class="team-card-name">Ольга Рєпіна</p>
+            <p lang="en" class="team-card-description">Frontend Developer</p>
+          </li>
+          <li class="team-card">
+            <img src="./images/tmember3.jpg" alt="член команди 3" width="270">
+            <p class="team-card-name">Микола Тарасов</p>
+            <p lang="en" class="team-card-description">Marketing</p>
+          </li>
+          <li class="team-card">
+            <img src="./images/tmember4.jpg" alt="член команди 4" width="270">
+            <p class="team-card-name">Михайло Єрмаков</p>
+            <p lang="en" class="team-card-description">UI Designer</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
+    <div class="container">
     <a href="/" class="logo-link  on-black"><span class="logo-accent">Web</span>Studio</a>
-    <ul class="contact-list ">
+    <ul class="footer-list">
       <li>
         <a href="#" class="footer-link ">
           <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
@@ -126,7 +130,10 @@
       <li><a href="mailto:info@devstudio.com" class="footer-link ">info@devstudio.com</a></li>
       <li><a href="tel:+380961111111" class="footer-link ">+38 096 111 11 11</a></li>
     </ul>
+    </div>
   </footer>
+
+
 </body>
 
 </html>
