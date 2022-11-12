@@ -260,20 +260,25 @@ body {
   padding-bottom: 94px;
 }
 
+.clients {
+    padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team {
   background-color: var(--color-background-secondary);
-  padding-top: 95px;
-  padding-bottom: 93px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
+.clients-list,
 .competence-list,
 .team-list {
   display: flex;
-
   justify-content: space-between;
   align-items: flex-start;
 }
 
+.clients-header,
 .competence-hdr,
 .team-hdr {
   color: var(--color-secondary);
@@ -287,6 +292,7 @@ body {
   min-width: 370 px;
 }
 
+/* = «C3» У картках секції Наша команда є постійний ефект тіні. */
 .team-card {
   background-color: var(--color-white);
   font-size: 16px;
@@ -294,7 +300,7 @@ body {
   text-align: center;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0 2px 1px var(--color-primary);
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
 }
 
 .team-card-name {
@@ -302,6 +308,16 @@ body {
   font-weight: 500;
   margin-bottom: 10px;
   margin-top: 30px;
+}
+
+.clients-list {
+  gap: 30px;
+}
+
+.client-item {
+  height: 92px;
+  width: 170px;
+  border: 1px solid #AFB1B8
 }
 
 /* ============================== PORTFOLIO PAGE ============================== */
@@ -335,9 +351,12 @@ body {
   border-style: none;
 }
 
+ /* =  «C5» У фільтрі сторінки Портфоліо є ефект тіні при ховері або фокусі на кнопки. */
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--color-white);
+  background-color: var(--color-accent);
+  box-shadow: 0px 2px 2px 0px #0000001F, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001A;
 }
 
 .project-list {
@@ -349,9 +368,13 @@ body {
 
 .project-list-item {
   margin-left: var(--net-space);
-   margin-top: var(--net-space);
+  margin-top: var(--net-space);
 
   flex-basis: calc(100% / var(--net-row-num) - var(--net-space) * (var(--net-row-num - 1)));
+}
+/* = «C4» У картках сторінки Портфоліо є ефект тіні при ховері в будь-якому місці картки. */
+.project-wrap:hover {
+  box-shadow: 1px 4px 6px 0px #00000029,  0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
 }
 
 .project-description {
